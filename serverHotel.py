@@ -3,8 +3,8 @@ from xmlrpc.server import SimpleXMLRPCServer
 import mysql.connector
 from mysql.connector import Error
 print('SERVIDOR')
-ip = '127.0.0.1'
-porta = 8080
+ip = '192.168.0.107'
+porta = 8000
 def buscarQuartoDisponivel():
     con = mysql.connector.connect(host = 'localhost', database='hotel', user = 'wrgalvao', password = '81623140')
     consultaSQL = "select * from quarto"
@@ -19,7 +19,7 @@ def buscarQuartoDisponivel():
         cursor.close()
 #        print("Conexao ao mysql encerrada")
     return quantidadeDisponivel
-print('Servidor iniciado, esperando por clientes em:\nip: 127.0.0.1\nporta: 8080')
+print('Servidor iniciado, esperando por clientes em:\nip: 192.168.0.107\nporta: 8000')
 servidor = SimpleXMLRPCServer((ip, porta))
 servidor.register_function(buscarQuartoDisponivel, "buscarQuartoDisponivel")
 servidor.serve_forever()

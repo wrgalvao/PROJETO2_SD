@@ -1,0 +1,123 @@
+.app {
+  background: #f1faee;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.home {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nomeHotel {
+  margin-top: 120px;
+  color: #1d3557;
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+  color: #457b9d;
+}
+
+.topico {
+  margin: 50px 0px 10px 0px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #1d3557;
+  border-bottom: solid #1d3557;
+}
+
+.fotos {
+  margin: 10px 0px 20px 0px;
+  text-align: center;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 450px);
+}
+
+.foto01 {
+  background-image: url(/assets/img/01-1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.foto02 {
+  background-image: url(/assets/img/01-2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.foto03 {
+  background-image: url(/assets/img/01-3.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.foto04 {
+  background-image: url(/assets/img/01-4.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.foto05 {
+  background-image: url(/assets/img/01-5.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.foto06 {
+  background-image: url(/assets/img/01-6.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.rodape {
+  background-color: #457b9d;
+  margin: 0px;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  color: #f1faee;
+}
+
+.reserva {
+  margin: 10px 0px 20px 0px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 450px);
+}
+.reserva01 {
+  padding: 20px;
+  background-color: #ffff;
+  box-shadow: 2px 2px 5px #457b9d;
+  -webkit-box-shadow: 2px 2px 5px #457b9d;
+  -moz-box-shadow: 2px 2px 5px #457b9d;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+.checkin {
+  color: #1d3557;
+  display: inline;
+  /* grid-template-columns: 1.8fr; */
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  height: 100px;
+  width: 200px;
+  grid-auto-flow: row;
+}

@@ -11,13 +11,13 @@ def buscarQuartoDisponivel():
     cursor = con.cursor()
     cursor.execute(consultaSQL)
     linhas = cursor.fetchall()
-    print("Numero total de registros retornados: ", cursor.rowcount)
+    #print("Numero total de registros retornados: ", cursor.rowcount)
     for linha in linhas:
         quantidadeDisponivel = linha[0]
     if(con.is_connected()):
         con.close()
         cursor.close()
-        print("Conexao ao mysql encerrada")
+        #print("Conexao ao mysql encerrada")
     return quantidadeDisponivel
 print('Servidor iniciado, esperando por clientes em:\nip: 127.0.0.2\nporta: 8080')
 servidor = SimpleXMLRPCServer((ip, porta))

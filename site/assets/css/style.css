@@ -1,0 +1,144 @@
+/* fundo: f1faee 
+   pFraca: a8dadc
+   mediano: 457b9d
+   dark: 1d3557*/
+
+.app {
+  background: #f1faee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+  /* position: fixed; */
+  width: 100%;
+  display: grid;
+  height: 80px;
+  padding-top: 25px;
+  background-color: #f1faee;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: 1;
+}
+
+.rodape {
+  text-align: center;
+  margin: 15px;
+}
+
+:root {
+  --pink: #192024;
+}
+
+#navbar {
+  width: 100vw;
+  background-color: #457b9d;
+  font-weight: bold;
+  height: 80px;
+  font-size: larger;
+  padding-top: 10px;
+  position: fixed;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 0;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 3em;
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.4em;
+  width: 0%;
+  background-color: #a8dadc;
+  bottom: -1em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after {
+  width: 60%;
+}
+
+li a:hover {
+  color: #a8dadc;
+}
+
+li:first-child {
+  margin-right: auto;
+  margin-left: 3em;
+}
+
+/* imagem central */
+
+.imgi {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(/assets/img/hotel_bck.jpg);
+  background-size: cover;
+  height: 100vh;
+  border-radius: 5px;
+}
+
+.title {
+  /* position: absolute; */
+  width: 100%;
+
+  left: 50%;
+  padding-top: 13%;
+  padding-left: 8%;
+  padding-right: 8%;
+
+  color: white;
+  text-align: justify;
+  font-size: 30px;
+}
+
+.topico {
+  margin: 50px 20px 10px 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #1d3557;
+  border-bottom: solid #1d3557;
+}
+
+.nos {
+  width: 100%;
+  left: 50%;
+  padding-top: 100px;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: 1d3557;
+  text-align: justify;
+  font-size: 30px;
+}
+
+.fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bibli {
+  display: block;
+  margin: 20px;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.rodape {
+  background-color: #457b9d;
+  margin: 0px;
+  margin-top: 30px;
+  padding: 20px;
+  color: #f1faee;
+}

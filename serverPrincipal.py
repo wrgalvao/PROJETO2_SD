@@ -11,7 +11,9 @@ while(True):
     resposta = input('Deseja realizar uma consulta de quarto s/n ?')
     resposta.lower()
     if(resposta == 's'):
-        consultaQuartos = servidor.buscarQuartoDisponivel()
-        print("Quantidade de quartos disponiveis e: ", consultaQuartos)
+        quantidadeDisponivel = servidor.buscarQuartoDisponivel()
+        print("Quartos Disponiveis: ",quantidadeDisponivel)
+        #consultaQuartos = servidor.buscarQuartoDisponivel()
+        #print("Quantidade de quartos disponiveis e: ", consultaQuartos)
     elif(resposta == 'n'):
         break
