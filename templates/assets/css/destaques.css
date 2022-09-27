@@ -1,0 +1,96 @@
+.destaques {
+  margin: 10px 20px 20px 20px;
+  text-align: center;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, 250px);
+}
+
+.destaques__secundario_01 {
+  /* grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5; */
+  background-image: url(/assets/img/hotel01.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #a8dadc;
+}
+
+.destaques__secundario_02 {
+  /* grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5; */
+  background-color: aqua;
+  background-image: url(/assets/img/hotel02.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.destaques__secundario_03 {
+  /* grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5; */
+  background-color: mediumseagreen;
+  background-image: url(/assets/img/hotel03.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.destaques__secundario_04 {
+  background-color: dimgrey;
+  background-image: url(/assets/img/hotel04.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.destaques__categorias {
+  grid-row-start: 3;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.destaques__categorias___lista {
+  text-align: start;
+  display: grid;
+  height: 250px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 50%);
+}
+
+.destaques__categorias___link {
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 50px;
+  height: 120px;
+  margin: 2px;
+  display: block;
+  color: black;
+  background-color: white;
+}
+
+.caixa {
+  display: flex;
+  align-items: flex-end;
+}
+
+.destaques__titulo {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f1faee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#ht {
+  color: #d6ccc2;
+}

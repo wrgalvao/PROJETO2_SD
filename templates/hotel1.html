@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hoteis</title>
-    <link href="./assets/css/hotel.css" rel="stylesheet">
-    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <link href="/assets/css/hotel.css" rel="stylesheet">
+    <link href="/assets/css/navbar.css" rel="stylesheet">
   </head>
 
   <body class="app">
@@ -55,6 +55,11 @@
         </div>
       </section>
       <div class="topico" id="ns">Reservas</div>
+      <form action="/buscarQuartoDisponivel", method="get">
+        <input type="hidden" value="{{ip}}" name="ip">
+        <input type="hidden" value="8080" name="porta">
+        <button>Quartos disponiveis</button>
+      </form>
       <section class="reserva">
         <div class="reserva01">
           <div class="checkin">

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel 01</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en" style=" scroll-behavior: smooth;">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoteis</title>
+    <link href="/assets/css/hotel.css" rel="stylesheet">
+    <link href="/assets/css/navbar.css" rel="stylesheet">
+  </head>
+
+  <body class="app">
+    <div id='navbar' style="top: 0px;">
+      <ul>
+        <li><a href="#centro">Home</a></li>
+        <li><a href="index.html">Hoteis Disponíveis</a></li>
+        <li><a href="#ns">Sobre nós</a></li>
+        <li><a>Login</a></li>
+      </ul>
+    </div>
+    <main class="home">
+      <div class="nomeHotel">Hotel 2</div>
+      <div>
+        <p style="display: inline;">2.127 avaliações</p>
+        <h3 style="display: inline; margin-left: 8px; color: #457b9d;">Nº 1 de 49 hotéis em: São Luís</h3>
+      </div>
+      <div class="fas fa-map-marker" style="display: inline; margin-top: 5px; color: #606060;"></div>
+      Rua João Pereira Damasceno 2, São Luís, Maranhão 65077-630 Brasil
+      <div class="topico" id="ns">Fotos do local</div>
+
+      <section class="fotos">
+        <div class="foto01">
+        </div>
+        <div class="foto02">
+        </div>
+        <div class="foto03">
+        </div>
+        <div class="foto04">
+        </div>
+        <div class="foto05">
+        </div>
+        <div class="foto06">
+        </div>
+      </section>
+      <div class="topico" id="ns">Reservas</div>
+      <form action="/buscarQuartoDisponivel", method="get">
+        <input type="hidden" value="{{ip}}" name="ip">
+        <input type="hidden" value="8080" name="porta">
+        <button>Quartos disponiveis</button>
+      </form>
+      <section class="reserva">
+        <div class="reserva01">
+          <div class="checkin">
+            <div class="logo fas fa-h-square"></div>
+            <div class="nome">Check-in</div>
+            <div class="descrição">quarta</div>
+          </div>
+          <div class="reserva03">
+          </div>
+        </div>
+        <div class="reserva01">
+          <div class="checkin">
+            <div class="logo fas fa-h-square"></div>
+            <div class="nome">Check-in</div>
+            <div class="descrição">quarta</div>
+          </div>
+          <div class="reserva03">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">Todos os direitos reservados &copy;</footer>
+    <script src="./assets/js/fontawesome.all.min.js"></script>
+  </body>
+
+  </html>
+</body>
+
+</html>
