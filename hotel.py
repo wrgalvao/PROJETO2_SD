@@ -22,7 +22,7 @@ def index():
 
 @app.route("/hotel/<hotel>")
 def hotel(hotel):
-    ips = {1:"127.0.0.1", 2:"127.0.0.2", 3:"10.147.17.43"}
+    ips = {1:"127.0.0.1", 2:"127.0.0.2", 3:"10.147.17.41"}
     ip = ips.get(int(hotel), 1)
     return render_template(f"hotel{hotel}.html", ip=ip)
 
