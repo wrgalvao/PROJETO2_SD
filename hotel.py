@@ -22,12 +22,12 @@ def index():
 
 @app.route("/hotel/<hotel>")
 def hotel(hotel):
-    ips = {1:"127.0.0.1", 2:"127.0.0.2", 3:"10.147.17.41"}
+    ips = {1:"127.0.0.1", 2:"192.168.189.230", 3:"192.168.189.115"}
     ip = ips.get(int(hotel), 1)
     return render_template(f"hotel{hotel}.html", ip=ip)
 
 @app.route("/buscarQuartoDisponivel", methods=["GET"])
-def buscarQuarto():
+def buscarQuartoDisponivel():
     ip, porta = request.args.get('ip'), request.args.get('porta')
     return str(app.bot.busca(ip, int(porta)))
     #return str([ip,porta])
@@ -43,7 +43,7 @@ class ThreadedWeb(threading.Thread):
         app.run()
 
 class ThreadedBot(threading.Thread):
-    """Thread for bot"""
+    """Thread"""
     def __init__(self):
         threading.Thread.__init__(self)
     def busca(self, ip, porta):
@@ -52,13 +52,13 @@ class ThreadedBot(threading.Thread):
         return quantidadeDisponivel
 
     def run(self):
-        print("Starting bot")
+        print("Starting")
         serverHotel.iniciarRPC()
 
-bot = ThreadedBot()
-web = ThreadedWeb(bot)
+bo = ThreadedBot()
+web = ThreadedWeb(bo)
 
-bot.start()
+bo.start()
 web.start()
 
 
