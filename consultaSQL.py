@@ -1,5 +1,4 @@
 import mysql.connector
-from mysql.connector import Error
 
 con = mysql.connector.connect(host='localhost', database='hotel', user = 'wrgalvao', password = '81623140')
 consultaSQL = "select * from quarto"
